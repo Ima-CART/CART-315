@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Numerics;
 using UnityEngine;
 
 public class FloatingPwUp : MonoBehaviour
@@ -20,7 +19,7 @@ public class FloatingPwUp : MonoBehaviour
 
     private void InitialFloat()
     {
-        // Vector2 dir = Vector.left;
+        Vector2 dir = Vector2.left;
     }
     private void Reset()
     {
