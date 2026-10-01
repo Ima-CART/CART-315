@@ -43,6 +43,12 @@ public class BallMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Paddle paddle = collision.gameObject.GetComponent<Paddle>();
+
+        if (paddle)
+        {
+            lastHit = paddle;
+        }
 
     }
     private void OnTriggerEnter2D(Collider2D collision)
