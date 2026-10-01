@@ -6,6 +6,7 @@ public class BallMovement : MonoBehaviour
 {
     public GameManager gameManager;
     public Rigidbody2D rb2d;
+    public Paddle lastHit;
     public float maxInitialAngle = 0.62f;
     public float moveSpeed = 1f;
     public float maxStartY = 4f;
@@ -40,6 +41,10 @@ public class BallMovement : MonoBehaviour
         transform.position = position;
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
