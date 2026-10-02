@@ -896,6 +896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BallMovement
   gameManager: {fileID: 216204097}
   rb2d: {fileID: 895835761}
+  lastHit: {fileID: 0}
   maxInitialAngle: 0.62
   moveSpeed: 4
   maxStartY: 4
@@ -1277,7 +1278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d9184c961ee4ef46b967c1a4d9166be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FloatingPwUp
-  rd2d: {fileID: 1159146444}
+  rb2d: {fileID: 1159146444}
   maxSpeed: 4
   startY: 0
   startX: 0
@@ -1386,7 +1387,7 @@ GameObject:
   - component: {fileID: 1245025321}
   m_Layer: 0
   m_Name: Lower Walls
-  m_TagString: Untagged
+  m_TagString: Bottom Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1700,7 +1701,7 @@ GameObject:
   - component: {fileID: 1882712175}
   m_Layer: 0
   m_Name: Upper walls
-  m_TagString: Untagged
+  m_TagString: Top Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
