@@ -7,7 +7,7 @@ public class FloatingPwUp : MonoBehaviour
 {
     public Rigidbody2D rb2d;
 
-    public float maxSpeed = 0.5f;
+    public float maxSpeed = 1f;
 
     public float startY;
 
@@ -45,17 +45,24 @@ public class FloatingPwUp : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Border"))
+        if (collision.gameObject.CompareTag("TopBorder"))
         {
-            ChangeDirection();
+            Vector2 dir = new Vector2(Random.Range(-3, 3), Random.Range(-2, 0));
+            rb2d.linearVelocity = dir * maxSpeed;
 
+        }
+
+        if (collision.gameObject.CompareTag("BottomBorder"))
+        {
+            Vector2 dir = new Vector2(Random.Range(-3, 3), Random.Range(1, 2));
+            rb2d.linearVelocity = dir * maxSpeed;
         }
 
     }
 
     private void ChangeDirection()
     {
-        Vector2 dir = new Vector2(Random.Range(-2, 2), Random.Range(-1, 1));
+        Vector2 dir = new Vector2(Random.Range(-2, 2), Random.Range(-3, 3));
         rb2d.linearVelocity = dir * maxSpeed;
 
     }
