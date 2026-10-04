@@ -5,6 +5,8 @@ using UnityEngine.UIElements;
 
 public class FloatingPwUp : MonoBehaviour
 {
+    private Vector3 startPosition;
+
     public Rigidbody2D rb2d;
 
     public float maxSpeed = 1f;
@@ -21,6 +23,9 @@ public class FloatingPwUp : MonoBehaviour
     {
         StartCoroutine(InitialFloat());
         // InitialFloat();
+
+        startPosition = transform.position;
+
     }
 
     private IEnumerator InitialFloat()
@@ -38,6 +43,7 @@ public class FloatingPwUp : MonoBehaviour
     {
         GetComponent<SpriteRenderer>().enabled = false;
         GetComponent<Collider2D>().enabled = false;
+        rb2d.linearVelocity = Vector2.zero;
 
         yield return new WaitForSeconds(3f);
 
@@ -48,6 +54,10 @@ public class FloatingPwUp : MonoBehaviour
     private void Reset()
     {
 
+    }
+    public void ResetPosition()
+    {
+        transform.position = startPosition;
     }
 
 
