@@ -5,16 +5,16 @@ TagManager:
   serializedVersion: 3
   tags:
   - Border
-  - Top Border
-  - Bottom Border
+  - TopBorder
+  - BottomBorder
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - PowerUp
   - Water
   - UI
-  - 
+  - Border
   - 
   - 
   - 

@@ -898,7 +898,7 @@ MonoBehaviour:
   rb2d: {fileID: 895835761}
   lastHit: {fileID: 0}
   maxInitialAngle: 0.62
-  moveSpeed: 4
+  moveSpeed: 7
   maxStartY: 4
 --- !u!1 &930598829
 GameObject:
@@ -1128,7 +1128,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 384505936}
@@ -1190,7 +1190,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1279,7 +1279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FloatingPwUp
   rb2d: {fileID: 1159146444}
-  maxSpeed: 4
+  maxSpeed: 6
   startY: 0
   startX: 0
 --- !u!1 &1202322574
@@ -1387,7 +1387,7 @@ GameObject:
   - component: {fileID: 1245025321}
   m_Layer: 0
   m_Name: Lower Walls
-  m_TagString: Bottom Border
+  m_TagString: BottomBorder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1701,7 +1701,7 @@ GameObject:
   - component: {fileID: 1882712175}
   m_Layer: 0
   m_Name: Upper walls
-  m_TagString: Top Border
+  m_TagString: TopBorder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
