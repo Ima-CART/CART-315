@@ -34,23 +34,9 @@
               "icon": "lucide-file",
               "title": "Reading Reflection 2"
             }
-          },
-          {
-            "id": "fa63e54d9f2a400a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Prototype1_Pong_Journal.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Prototype1_Pong_Journal"
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "8927c1acb9daa9fc",
@@ -233,10 +219,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "fa63e54d9f2a400a",
+  "active": "0fd83309b58124d6",
   "lastOpenFiles": [
-    "Reading Reflection 2.md",
     "Prototype1_Pong_Journal.md",
+    "Reading Reflection 2.md",
     "Welcome.md"
   ]
 }
