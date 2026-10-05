@@ -49,7 +49,8 @@ public class BallMovement : MonoBehaviour
         if (paddle)
         {
             lastHit = paddle;
-            rb2d.linearVelocity *= speedMultiplier;
+            rb2d.linearVelocity = Vector2.ClampMagnitude(
+                rb2d.linearVelocity * speedMultiplier, 15f);
         }
 
     }

@@ -21,10 +21,10 @@ public class FloatingPwUp : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
+        startPosition = transform.position;
         StartCoroutine(InitialFloat());
         // InitialFloat();
 
-        startPosition = transform.position;
 
     }
 
@@ -113,11 +113,39 @@ public class FloatingPwUp : MonoBehaviour
 
     // }
 
+    // private void ChangeDirection()
+    // {
+    //     float xDirection;
+
+    //     if (transform.position.x < -8)
+    //     {
+    //         // Too far left, so move right
+    //         xDirection = Random.Range(1, 3);
+    //     }
+    //     else if (transform.position.x > 5)
+    //     {
+    //         // Too far right, so move left
+    //         xDirection = -Random.Range(1, 3);
+    //     }
+    //     else
+    //     {
+    //         // Middle: move randomly
+    //         xDirection = Random.Range(-2, 3);
+    //     }
+
+    //     float yDirection = Random.Range(-2, 3);
+
+    //     Vector2 dir = new Vector2(xDirection, yDirection);
+
+    //     rb2d.linearVelocity = dir.normalized * maxSpeed;
+    // }
+
     private void ChangeDirection()
     {
         float xDirection;
+        float yDirection;
 
-        if (transform.position.x < -8)
+        if (transform.position.x < -7)
         {
             // Too far left, so move right
             xDirection = Random.Range(1, 3);
@@ -133,12 +161,27 @@ public class FloatingPwUp : MonoBehaviour
             xDirection = Random.Range(-2, 3);
         }
 
-        float yDirection = Random.Range(-2, 3);
+        if (transform.position.y < -4)
+        {
+            // Too far down, so move up
+            yDirection = Random.Range(1, 3);
+        }
+        else if (transform.position.y > 4)
+        {
+            // Too far up, so move down
+            yDirection = -Random.Range(1, 3);
+        }
+        else
+        {
+            // Middle: move randomly
+            yDirection = Random.Range(-2, 3);
+        }
 
         Vector2 dir = new Vector2(xDirection, yDirection);
 
         rb2d.linearVelocity = dir.normalized * maxSpeed;
     }
+
 
 
     // Update is called once per frame
