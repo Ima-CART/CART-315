@@ -35,6 +35,10 @@ public class GameManager : MonoBehaviour
             paddle2.transform.localScale.z
         );
         powerUp.ResetPosition();
+
+        paddle1.ResetPosition();
+        paddle2.ResetPosition();
+
     }
 
 

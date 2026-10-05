@@ -8,6 +8,18 @@ public class Paddle : MonoBehaviour
     public Rigidbody2D rb2d;
     public int id;
     public float moveSpeed = 2f;
+    private Vector3 startPosition;
+
+    private void Start()
+    {
+        startPosition = transform.position;
+    }
+
+    public void ResetPosition()
+    {
+        transform.position = startPosition;
+    }
+
 
     public void Update()
     {
