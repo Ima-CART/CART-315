@@ -10,6 +10,7 @@ public class BallMovement : MonoBehaviour
     public float maxInitialAngle = 0.62f;
     public float moveSpeed = 1f;
     public float maxStartY = 4f;
+    public float speedMultiplier = 1.1f;
     private float startX = 0f;
 
 
@@ -48,6 +49,7 @@ public class BallMovement : MonoBehaviour
         if (paddle)
         {
             lastHit = paddle;
+            rb2d.linearVelocity *= speedMultiplier;
         }
 
     }
