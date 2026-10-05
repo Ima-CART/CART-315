@@ -167,6 +167,9 @@ MonoBehaviour:
   scorePlayer2: 0
   scoreTextLeft: {fileID: 995937752066980464}
   scoreTextRight: {fileID: 698815664}
+  paddle1: {fileID: 742920993}
+  paddle2: {fileID: 411587114}
+  powerUp: {fileID: 1159146447}
 --- !u!1 &384505935
 GameObject:
   m_ObjectHideFlags: 0
@@ -898,7 +901,7 @@ MonoBehaviour:
   rb2d: {fileID: 895835761}
   lastHit: {fileID: 0}
   maxInitialAngle: 0.62
-  moveSpeed: 7
+  moveSpeed: 4
   maxStartY: 4
 --- !u!1 &930598829
 GameObject:
@@ -1127,8 +1130,8 @@ Transform:
   m_GameObject: {fileID: 1159146442}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 384505936}
