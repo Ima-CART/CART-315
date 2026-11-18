@@ -1,0 +1,12 @@
+Vladim Nickel
+Cart 315: Digital Game Prototyping
+September 16th, 2026
+
+
+The reading explains that prototyping is not just a tool that designers use for testing; it is much more than that. Prototyping helps designers explore, learn, and develop ideas throughout the design process. There should be no limitations on what prototyping can do for designers, as it is an essential part of designing. The reading goes deeper by explaining different approaches to prototyping, including prototypes as filters and prototypes as manifestations.
+
+Looking at prototypes as filters allows designers to focus on a specific aspect of a design and ask more questions about it. By filtering certain aspects of a game, designers can examine what needs to be improved because they are only testing one area at a time. There is no need to test the entire game at once; instead, designers can focus on one thing and learn from it. This reminds me of when I was modifying my Pong game. I was focused on the power-up and what it would do to the ball when it was hit. I needed to think about the appearance of the power-up, what abilities it should have, and what would happen when the ball interacted with it. There was no need to create the whole game at once. It was better to focus on one aspect and ask the necessary questions before looking at the game as a whole.
+
+The next concept discussed in the reading was prototypes as manifestations. Prototyping as a manifestation brings to life what exists in the designer’s mind. It allows others to see the designer’s ideas and experience them firsthand. Whether through sketches, models, or digital projects, a prototype gives form to an idea. This reminds me of the Mod Jam project I completed in CART 253. The idea was to modify a game where a frog eats flies. I wanted to add a bumblebee that would appear after the frog ate a certain number of flies. Unlike the flies, the bumblebee would be dangerous, as eating it would slowly kill the frog. The idea existed in my head, but through coding, it became something real. People were able to play my version of the game and experience the idea I had envisioned.
+
+Overall, prototyping is valuable regardless of whether it is low fidelity, such as sketches and drawings, or high fidelity, such as projects created in Unity or p5.js. The purpose of prototyping is to help designers learn, explore, and develop ideas as they create. Design is an ongoing creative process, and prototyping plays an important role in helping ideas evolve and improving interaction throughout development.
